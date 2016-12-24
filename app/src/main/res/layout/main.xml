@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_fragment_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:contentDescription=""
+        android:focusable="true"
+        android:scaleType="centerCrop"
+        android:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/fl_webView_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.love.view.typewriter.TypeTextView
+        android:id="@+id/typeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="55dp"
+        android:gravity="center"
+        android:lineSpacingExtra="10dp"
+        android:paddingBottom="55dp"
+        android:textSize="17sp" />
+
+    <com.love.view.bluesnow.FlowerView
+        android:id="@+id/flowerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.love.view.whitesnow.SnowView
+        android:id="@+id/whiteSnowView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.love.view.heart.HeartLayout
+        android:id="@+id/heart_o_red_layout"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="50dp"
+        android:background="@android:color/transparent"
+        android:visibility="gone" />
+
+</FrameLayout>
